@@ -2,8 +2,18 @@ import { Autocomplete, Button, Toolbar } from "@mui/material";
 import React from "react";
 import TextField from "@mui/material/TextField";
 import { useStyles } from "./NavBar.style";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 
 function NavSearch() {
+
+  const theme = createTheme({
+    palette:{
+      primary:{
+        main:'#757575' 
+      }
+    }
+  })
   const classes = useStyles();
 
   const defaultProps = {
@@ -11,12 +21,17 @@ function NavSearch() {
     getOptionLabel: (option) => option.title,
   };
 
+  // all button dropdown 
+
+
   return (
     <div className={classes.SerachBarBackground}>
       {/* categories  */}
 
-      <Autocomplete
-        {...defaultProps}
+       <Autocomplete
+     freeSolo
+     options={items}
+  
         className={classes.SearchBarAllButton}
         id="disable-close-on-select"
         disableCloseOnSelect
@@ -31,7 +46,7 @@ function NavSearch() {
             InputProps={{ ...params.InputProps, disableUnderline: true }} 
           />
         )}
-      />
+      /> 
  
       <div className={classes.SearchBarBoder}></div>
 
@@ -55,7 +70,10 @@ function NavSearch() {
       />
       <div className={classes.SearchBarBoder}></div>
       {/* search button */}
-      <button className={classes.SearchBarSerachButton}>Search</button>
+      <ThemeProvider theme={theme}>  
+      <Button className={classes.SearchBarSerachButton} variant= 'text' color = 'primary'  >Search</Button>
+      </ThemeProvider>
+    
     </div>
   );
 }

@@ -1,0 +1,37 @@
+a:link, a:visited.subNavBarTitel{
+    color: rgb(128, 106, 106);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  @media (min-width: 600px){
+    .css-1t29gy6-MuiToolbar-root {
+      min-height: 40px !important;
+  }
+  }
+  
+  .main_nav li:hover a, .link-active, .current-menu-item a {
+    box-shadow: 0px -5px 0px rgba(255, 255, 255, 0.3) inset, 0px 2px 0px rgba(255, 255, 255, 0) inset;
+}
+
+/****Categories button****/
+
+/* categories icon  */
+svg.MuiSvgIcon-root {
+  /* color: red; */
+  margin-left: auto;
+}
+
+.MuiPaper-rounded {
+  border-radius: 0px !important;
+}
+
+div {
+  text-align: center;
+}
+
+
+label + .MuiInput-formControl {
+  margin-top: 0px !important;
+}

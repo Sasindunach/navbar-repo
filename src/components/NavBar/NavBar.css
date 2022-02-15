@@ -1,10 +1,20 @@
 
- a:link, a:visited {
+ a:link, a:visited.navitemtext{
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
+
 svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
   display: none;
 }
+
+.MuiBadge-anchorOriginTopRightRectangle {
+  top: 10px !important;
+  transform: scale(1) translate(50%, -50%) !important;
+  
+}
+/* button.MuiButton-root.MuiButton-text.MuiButton-textSecondary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.makeStyles-SearchBarSerachButton-5.css-1d3f8j8-MuiButtonBase-root-MuiButton-root {
+  color: #959393;
+} */

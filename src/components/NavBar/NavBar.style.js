@@ -37,66 +37,59 @@ const useStyles = makeStyles({
     color: "red",
   },
 
-//SerachBarBackground
-  SerachBarBackground:{
+  //SerachBarBackground
+  SerachBarBackground: {
     backgroundColor: "white",
     height: "40px",
     display: "inline-block",
     borderRadius: "5px",
-    display: 'flex',
-    flexDirection: ' row',
-    justifyContent: 'space-between',
-    alignItems:'center',
-    marginLeft:30,
-    marginRight:30
-    
+    display: "flex",
+    flexDirection: " row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    marginLeft: 100,
+    marginRight: 100,
   },
 
   //searchBarBoder
-  SearchBarBoder:{
-    marginRight:10,
-    marginLeft:10,
-    height:40,
-   width: 0.5,
-    backgroundColor:' #dadada',
+  SearchBarBoder: {
+    height: 40,
+    width: 0.5,
+    backgroundColor: " #dadada",
   },
-
 
   //SearchBarAllButton
   SearchBarAllButton: {
-      paddingLeft:30,
-      width: 80,
-      border: "none",
-       
+    
+   
   },
-
 
   //SearchBarSerachButton
   SearchBarSerachButton: {
-    paddingRight:30,
-    width:80,
-    color:' #747474',
-     border: "none",
-     backgroundColor:'white',
-     Icon:'none',
+    width: 50,
+    color: 'error',
+    border: "none",
+    backgroundColor: "white",
     
-},
+  },
 
   //navtab icon
   navItemIcon: {
     color: "white",
-    paddingTop: 5,
   },
-
+ 
   //NavBarItemTitels
   NavBarItemTitels: {
     fontSize: 12,
     paddingBottom: 5,
 
-    color: 'red',
-  textalign: 'center',
-  textDecoration: 'none',
-  display: 'inline-block'
+    color: "red",
+    textalign: "center",
+    textDecoration: "none",
+    display: "inline-block",
+  },
+  useritem:{
+    alignItems:'center'
   },
 
   bgColour: {
@@ -109,12 +102,6 @@ const useStyles = makeStyles({
     height: 200,
     borderRadius: "10px",
   },
-
-  
-
-  
 });
 
 export { useStyles, MyBox };
-
-

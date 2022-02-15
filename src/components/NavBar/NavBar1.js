@@ -18,7 +18,9 @@ function NavBar1() {
   return (
     <div>
       <Toolbar 
-      style={{backgroundColor:'#00719C', display:"flex", justifyContent:"space-between"}}>
+      style={{backgroundColor:'#00719C', display:"flex", justifyContent:"space-between",
+      //  height: 60
+       }}>
      
        <div style={{flexGrow:1 }}><NavLogo /></div> 
        <div style={{flexGrow:2 }} ><NavSearch /></div>
