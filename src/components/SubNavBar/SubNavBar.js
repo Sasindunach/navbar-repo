@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {useSubNavBarStyles} from "./SubNavBar.style"
 import "./SubNavBar.css"; 
 import Dropdown from "./dropdown";
+import Categorie_Button from "./CotegorieButton/Categorie_Button";
 
 
 
@@ -30,7 +31,7 @@ function SubNavBar () {
     return (<div>
         <ThemeProvider theme={theme}>  
         <Toolbar className={classes.SubNavBarFullToolBar} >
-        <div style={{flexGrow:1 }}><Categories/></div> 
+        <div style={{flexGrow:1 }}><Categorie_Button/></div> 
         <div style={{flexGrow:1 }}><TodayDeals/></div> 
         <div style={{flexGrow:1 }}><BuyerProtection/></div>  
         <div style={{flexGrow:1 }}><Help/></div> 

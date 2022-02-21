@@ -58,7 +58,7 @@ function Categories() {
     }
     event.preventDefault();
     setMenuPosition({
-      bottom: event.pageY+200,
+      bottom: event.pageY,
       left: event.pageX,
     });
   };
@@ -119,7 +119,6 @@ function Categories() {
               className={classes.nextedItem}
             >
               <SubCategoriesPaper
-                
                 // anchorOrigin={{ vertical: "left", horizontal: "center" }}
                 // transformOrigin={{ vertical: "top", horizontal: "center" }}
               >
